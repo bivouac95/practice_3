@@ -1,3 +1,7 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 body{
     max-width: 360px;
     margin: 0 auto;
@@ -21,6 +25,7 @@ body{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin: 10px 0; 
 }
 
 .header__right{
@@ -34,6 +39,17 @@ body{
     flex-direction: row;
     gap: 35px;
     align-items: center;
+}
+
+.header__left--line{
+    height: 35px;
+    width: 2px;
+    background-color: #d5d5d5;
+}
+
+.header__left--logo{
+    height: 35px;
+    width: auto;
 }
 
 .unnessesary-buttons{
@@ -57,7 +73,8 @@ body{
 
 .main__navigation ul li{
     margin: 0 20px;
-    min-width: 190px;
+   width: auto;
+   flex-wrap: nowrap;
 }
 
 .main__article{
