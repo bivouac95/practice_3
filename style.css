@@ -142,6 +142,10 @@ body{
         display: inline;
     }
 
+    .main__navigation{
+        overflow-x: hidden;
+    }
+
     .main__navigation ul{
         display: flex;
         flex-direction: row;
