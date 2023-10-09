@@ -3,7 +3,9 @@
 }
 
 body{
-    max-width: 360px;
+    min-width: 400px;
+    max-width: 1200px;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -25,13 +27,17 @@ body{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 10px 0; 
+    padding: 10px 0; 
+    border-bottom: solid 1px #41f6d6 ;
 }
 
 .header__right{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    max-height: 35px;
+    flex-wrap: nowrap;
     gap: 30px;
+    align-items:flex-end;
 }
 
 .header__left{
@@ -54,10 +60,16 @@ body{
 
 .unnessesary-buttons{
     gap: 10px;
+    display: none;
 }
 
 .nessesary-buttons{
     gap: 10px;
+}
+
+.main h1{
+    border-left: solid 2px #41f6d6;
+    padding-left: 15px;
 }
 
 .main__navigation{
@@ -67,22 +79,79 @@ body{
 .main__navigation ul{
     display: flex;
     flex-direction: row;
+    gap: 30px;
     padding: 0;
     list-style: none;
 }
 
 .main__navigation ul li{
-    margin: 0 20px;
-   width: auto;
-   flex-wrap: nowrap;
+    min-width: max-content;
+    border: solid 2px #41f6d6;
+    border-radius: 8px;
+    padding: 8px 10px;
+    color: #909090;
 }
 
 .main__article{
     display: flex;
     flex-direction: column;
     gap: 30px;
+    margin: 10px 0;
+}
+
+.main__article p{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.article__read-more{
+    font-weight: bold;
+    margin: 20px 0;
+    font-size: large;
+    display: flex;
+    gap: 15px;
 }
 
 .article__picture{
-    width: 360px;
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (min-width: 850px){
+    .main__article{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .header__right{
+        display: flex;
+        flex-direction: row;
+        max-height: 35px;
+        flex-wrap: nowrap;
+        gap: 30px;
+        align-items:flex-end;
+    }
+
+    .article__picture{
+        width: 360px;
+        height: auto;
+    }
+
+    .unnessesary-buttons{
+        display: inline;
+    }
+
+    .main__navigation ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 25px;
+        padding: 0;
+        list-style: none;
+    }
+    
+    h1{
+        font-size: 25px;
+    }
 }
