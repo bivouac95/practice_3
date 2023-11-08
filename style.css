@@ -9,19 +9,27 @@
 
 body {
  background-color: #F8F8F8;
+ margin: 0;
 }
 
 .button {
-  height: 40px;
-  width: 40px;
-  border-radius: 100%;
-  background-color: #ff3e79;
-  border: none;
-  cursor: pointer;
-  display: flex;
-    align-items: center;
+    transition: all 0.2s;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    background-color: #ff3e79;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
 }
+
+.button:active {
+    transition: all 0.2s;
+    transform: scale(0.95);
+    background-color: #ff6191;
+  }
 
 .button img {
   height: 20px;
@@ -31,7 +39,6 @@ body {
 .header {
   min-width: 320px;
   max-width: 1200px;
-  width: 90%;
   margin: 0 auto;
 
   display: flex;
@@ -44,6 +51,7 @@ body {
 }
 
 .header__right {
+margin-right: 5%;
   display: flex;
   flex-direction: column;
   max-height: 35px;
@@ -53,6 +61,7 @@ body {
 }
 
 .header__left {
+    margin-left: 5%;
   display: flex;
   flex-direction: row;
   gap: 8.35px;
@@ -83,8 +92,6 @@ body {
   max-width: 1200px;
   width: 90%;
   margin: 0 auto;
-  
-  margin: 0 16px;
 }
 
 .main h1 {
@@ -111,12 +118,19 @@ body {
 }
 
 .main__navigation ul li {
+    transition: all 0.2s;
   min-width: max-content;
   border: solid 2px #41f6d6;
   border-radius: 8px;
   padding: 8px 10px;
   color: #909090;
+  background-color: #ffffff;
   cursor: pointer;
+}
+
+.main__navigation ul li:active{
+    transition: all 0.2s;
+    transform: scale(0.95);
 }
 
 .main__article {
