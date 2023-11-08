@@ -8,10 +8,7 @@
 }
 
 body {
-  min-width: 320px;
-  max-width: 1200px;
-  width: 90%;
-  margin: 0 auto;
+ background-color: #F8F8F8;
 }
 
 .button {
@@ -32,12 +29,18 @@ body {
 }
 
 .header {
+  min-width: 320px;
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 10px 16px;
   border-bottom: solid 1px #D9FFF5;
+  background-color: #ffffff;
 }
 
 .header__right {
@@ -76,6 +79,11 @@ body {
 }
 
 .main {
+  min-width: 320px;
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  
   margin: 0 16px;
 }
 
