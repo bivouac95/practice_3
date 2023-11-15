@@ -36,31 +36,8 @@ body {
   width: auto;
 }
 
-#menu{
-  position: absolute;
-  left: -340px;
-  top: 0;
-  margin: 0;
-  transition: all 0.3s;
-  min-width: 250px;
-  width: 340px;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  box-shadow: 0;
-}
-
-.menu-active {
-  transition: all 0.3s;
-  left: 0;
-  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2),
-    -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
-}
-
 .header {
   min-width: 320px;
-  max-width: 1200px;
   margin: 0 auto;
 
   display: flex;
@@ -210,7 +187,135 @@ br {
 .article__picture {
   width: 100%;
   height: auto;
+  max-height: 100%;
 }
+
+#menu{
+  background-color: #ffffff;
+  position: absolute;
+  left: -340px;
+  top: 0;
+  margin: 0;
+  transition: all 0.3s;
+  min-width: 250px;
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 0;
+}
+
+.menu-active {
+  transition: all 0.3s;
+  transform: translateX(100%);
+  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2),
+    -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+}
+
+
+.menu__header {
+  margin: 25px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__header__left {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: center;
+}
+
+.logo {
+  height: 51px;
+}
+
+.menu__main {
+  margin-top: 20px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(8, 50px);
+  height: auto;
+}
+
+.navigation-link {
+  margin-left: 30px;
+  color: #1b1c21;
+
+  cursor: pointer;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  height: max-content;
+}
+
+.navigation-link--active {
+  color: #7e7e82;
+  margin-left: 10px;
+  padding-left: 19px;
+  border-left: 2px solid #41f6d7;
+}
+
+.menu__footer {
+  margin: 10px 20px;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.mail {
+  color: #1b1c21;
+  text-decoration: none;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.2px;
+  transition: all 0.2s;
+}
+
+.mail:hover,
+.phone-number:hover {
+  color: #41f6d7;
+  transition: all 0.2s;
+}
+
+.phone-number {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.6px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.language-settings {
+  height: 60px;
+}
+
+.language-settings__button:hover {
+  color: #ff3e79;
+  transition: all 0.3s;
+}
+
+.language-settings__button {
+  background-color: transparent;
+  border: none;
+  font-size: large;
+  cursor: pointer;
+}
+
 
 @media screen and (min-width: 850px) {
   .header__right {
