@@ -4,8 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>CPS Repair</title>
+    <link rel="stylesheet" href="./script/swiper-bundle.min.css">
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="normalize.css">
+    <script defer src="./script/swiper.min.js"></script>
+    <script defer src="./script/script.js"></script>
   </head>
   <body>
     <aside id="menu">
@@ -116,7 +120,7 @@
             обращаются по рекомендациям и, в свою очередь, советуют нас родным и
             близким.
           </p>
-          <span id="article__read-more">
+          <span class="read_more" id="article__read-more">
             <img src="./assets/expand.svg" alt="not found" />
             Читать далее
           </span>
@@ -124,6 +128,100 @@
         <img src="./assets/CPS.jpg" alt="not found" class="article__picture" />
       </section>
     </main>
+    <div class="section__header"><h2>Ремонт техники различных брендов</h2></div>
+    <section class="repair_section">
+        <div class="swiper">
+        <!-- Additionla required wrapper -->
+        <div class="swiper-wrapper">
+          <div class="swiper-slide brand_card">
+            <img src="./assets/cards/1.png" alt="not_found">
+            <button class="button button--arrow">></button>
+          </div>
+          <div class="swiper-slide brand_card">
+            <img src="./assets/cards/2.png" alt="not_found">
+            <button class="button button--arrow">></button>
+          </div>
+          <div class="swiper-slide brand_card">
+            <img src="./assets/cards/3.png" alt="not_found">
+            <button class="button button--arrow">></button>
+          </div>
+          <div class="swiper-slide brand_card">
+            <img src="./assets/cards/4.png" alt="not_found">
+            <button class="button button--arrow">></button>
+          </div>
+          <div class="swiper-slide brand_card">
+            <img src="./assets/cards/5.png" alt="not_found">
+            <button class="button button--arrow">></button>
+          </div>
+          <div class="swiper-slide brand_card">
+            <img src="./assets/cards/6.png" alt="not_found">
+            <button class="button button--arrow">></button>
+          </div>
+          <div class="swiper-slide brand_card">
+            <img src="./assets/cards/1.png" alt="not_found">
+            <button class="button button--arrow">></button>
+          </div>
+          <div class="swiper-slide brand_card">
+            <img src="./assets/cards/2.png" alt="not_found">
+            <button class="button button--arrow">></button>
+          </div>
+          <div class="swiper-slide brand_card">
+            <img src="./assets/cards/3.png" alt="not_found">
+            <button class="button button--arrow">></button>
+          </div>
+          <div class="swiper-slide brand_card">
+            <img src="./assets/cards/4.png" alt="not_found">
+            <button class="button button--arrow">></button>
+          </div>
+          <div class="swiper-slide brand_card">
+            <img src="./assets/cards/5.png" alt="not_found">
+            <button class="button button--arrow">></button>
+          </div> 
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+        <span class="read_more" id="swiper__read-more">
+          <img src="./assets/expand.svg" alt="not found" />
+          Показать все
+        </span>
+    </section>
+    <div class="section__header"><h2>Ремонт различных видов техники</h2></div>
+    <section class="type-of-equipment_section">
+      <div class="swiper">
+        <!-- Additionla required wrapper -->
+        <div class="swiper-wrapper">
+          <div class="swiper-slide type_card">
+            <span>Ремонт ноутбуков</span>
+            <button class="button button--arrow">></button>
+          </div>
+          <div class="swiper-slide type_card">
+            <span>Ремонт планшетов</span>
+            <button class="button button--arrow">></button>
+          </div>
+          <div class="swiper-slide type_card">
+            <span>Ремонт телефонов</span>
+            <button class="button button--arrow">></button>
+          </div>
+          <div class="swiper-slide type_card">
+            <span>Ремонт часов</span>
+            <button class="button button--arrow">></button>
+          </div>
+          <div class="swiper-slide type_card">
+            <span>Ремонт mp3-player'ов</span>
+            <button class="button button--arrow">></button>
+          </div>
+          <div class="swiper-slide type_card">
+            <span>Ремонт борюсиков</span>
+            <button class="button button--arrow">></button>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+        <span class="read_more" id="type-of-equipment__read-more">
+          <img src="./assets/expand.svg" alt="not found" />
+          Показать все
+        </span>
+    </section>
+    <div class="section__header"><h2>Цены на услуги</h2></div>
   </body>
-  <script src="./script/script.js"></script>
 </html>
