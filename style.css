@@ -519,6 +519,45 @@ br {
   letter-spacing: 0.2px;
 }
 
+footer {
+  min-width: 320px;
+  max-width: 1200px;
+  width: 90%;
+  margin: 16px auto;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.footer__first {
+  color: #7e7e82;
+  font-family: TT Lakes;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: center;
+}
+
+.footer__second {
+  color: #7e7e82;
+  font-family: TT Lakes;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: center;
+}
+
+.footer__third {
+  color: #7e7e82;
+  font-family: TT Lakes;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: center;
+}
+
 .section__header {
   height: 56px;
   margin: 24px 0;
@@ -650,5 +689,21 @@ br {
 
   .swiper-pagination {
     display: none;
+  }
+
+  footer {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  .footer__first {
+    text-align: left;
+  }
+  
+  .footer__second {
+    text-align: center;
+  }
+  
+  .footer__third {
+    text-align: right;
   }
 }
