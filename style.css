@@ -78,6 +78,10 @@ body {
   background-color: #ffffff;
 }
 
+.header__h1{
+  display:none;
+}
+
 .header__right {
   margin-right: 5%;
   display: flex;
@@ -112,8 +116,14 @@ body {
 
 .nessesary-buttons {
   display: flex;
+  align-items: center;
   gap: 16px;
 }
+
+.nessesary-buttons span{
+  display: none;
+}
+
 
 .main {
   min-width: 320px;
@@ -146,14 +156,19 @@ body {
 }
 
 .main__navigation ul li {
+  border: solid 0px #B8FFEC;
+  border-radius: 8px;
   transition: all 0.2s;
   min-width: max-content;
-  border: solid 2px #41f6d6;
-  border-radius: 8px;
   padding: 8px 10px;
   color: #909090;
-  background-color: #ffffff;
   cursor: pointer;
+}
+
+.main__navigation ul li:hover{
+  border: solid 2px #B8FFEC;
+  color: #909090;
+  background-color: #ffffff;
 }
 
 .main__navigation ul li:active {
@@ -165,7 +180,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  margin: 10px 0;
+  margin: 10px ;
 }
 
 .main__article-picture {
@@ -694,16 +709,80 @@ footer {
   footer {
     grid-template-columns: 1fr 1fr 1fr;
   }
-  
+
   .footer__first {
     text-align: left;
   }
-  
+
   .footer__second {
     text-align: center;
   }
-  
+
   .footer__third {
     text-align: right;
   }
+}
+
+@media (min-width: 1440px) {
+  #menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+
+  .header {
+    padding-left: 340px;
+  }
+
+  .main {
+    padding-left: 340px;
+  }
+
+  footer {
+    padding-left: 340px;
+  }
+
+  #anti-amongus {
+    display: none;
+  }
+
+  .unnessesary-buttons {
+    display: none;
+  }
+
+  .header__h1 {
+    display: inline;
+    color: #1b1c21;
+    font-family: TT Lakes;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; /* 142.857% */
+    letter-spacing: -0.6px;
+    padding-left: 30px;
+    border-left: solid 3px #41f6d6;
+  }
+
+  h1{
+    display: none;
+  }
+
+  .header__left{
+    display: none;
+  }
+
+  .main__navigation {
+    overflow-x: visible;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .main__article-picture{
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .nessesary-buttons span{
+    display: inline;
+  }  
 }
