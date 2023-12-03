@@ -78,8 +78,8 @@ body {
   background-color: #ffffff;
 }
 
-.header__h1{
-  display:none;
+.header__h1 {
+  display: none;
 }
 
 .header__right {
@@ -120,10 +120,9 @@ body {
   gap: 16px;
 }
 
-.nessesary-buttons span{
+.nessesary-buttons span {
   display: none;
 }
-
 
 .main {
   min-width: 320px;
@@ -156,7 +155,7 @@ body {
 }
 
 .main__navigation ul li {
-  border: solid 0px #B8FFEC;
+  border: solid 0px #b8ffec;
   border-radius: 8px;
   transition: all 0.2s;
   min-width: max-content;
@@ -165,8 +164,8 @@ body {
   cursor: pointer;
 }
 
-.main__navigation ul li:hover{
-  border: solid 2px #B8FFEC;
+.main__navigation ul li:hover {
+  border: solid 2px #b8ffec;
   color: #909090;
   background-color: #ffffff;
 }
@@ -180,7 +179,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  margin: 10px ;
+  margin: 10px;
 }
 
 .main__article-picture {
@@ -240,6 +239,55 @@ br {
   max-height: 100%;
 }
 
+.feedback {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 320px;
+  height: 100vh;
+  background: #fff;
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 24px 16px;
+}
+
+.feedback__body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 40px 0 0 0;
+}
+
+.feedback__footer {
+  display: flex;
+  margin: 16px 0;
+  gap: 19px;
+  flex-direction: column;
+}
+
+.feedback__footer p {
+  width: 288px;
+  margin: 0;
+  color: #7e7e82;
+  font-family: TT Lakes;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.feedback__footer p a{
+  color: #ff6191;
+  text-decoration:none;
+}
+
+.feedback__footer button {
+  width: 136px;
+  margin-left: 152px;
+}
+
 #menu {
   background-color: #ffffff;
   position: fixed;
@@ -253,6 +301,7 @@ br {
   width: 340px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 20px;
   box-shadow: 0;
   z-index: 99;
@@ -315,7 +364,6 @@ br {
 
 .menu__footer {
   margin: 10px 20px;
-  margin-top: 80px;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -763,11 +811,11 @@ footer {
     border-left: solid 3px #41f6d6;
   }
 
-  h1{
+  h1 {
     display: none;
   }
 
-  .header__left{
+  .header__left {
     display: none;
   }
 
@@ -777,12 +825,12 @@ footer {
     flex-wrap: wrap;
   }
 
-  .main__article-picture{
+  .main__article-picture {
     width: 90%;
     margin: 0 auto;
   }
 
-  .nessesary-buttons span{
+  .nessesary-buttons span {
     display: inline;
-  }  
+  }
 }
