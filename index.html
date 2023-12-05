@@ -39,10 +39,10 @@
     </div>
       <div class="menu__footer">
         <div class="contact-buttons">
-          <button class="button">
+          <button class="button phone-call__button">
             <img src="./assets/call.svg" alt="not_found" />
           </button>
-          <button class="button">
+          <button class="button feedback__button">
             <img src="./assets/message.svg" alt="not_found" />
           </button>
           <button class="button">
@@ -67,10 +67,27 @@
       </button>
       <div class="feedback__body">
         <h2>Обратная связь</h2>
-        <input class="" type="text">
-        <input type="text">
-        <input type="text">
-        <input type="text">
+        <input value="Почта" class="feedback__form" type="text">
+        <input value="Имя" class="feedback__form" type="text">
+        <input value="Фамилия" class="feedback__form" type="text">
+        <input value="Сообщение" class="feedback__form feedback__form--wide" type="text">
+        </div>
+        <footer class="feedback__footer">
+          <p>Нажимая “отправить”, вы даете согласие 
+            на <a href="">обработку персональных данных</a> и соглашаетесь 
+            с нашей <a href=""> политикой конфиденциальности</a></p>
+            <button class="button button__price_card">ОТПРАВИТЬ ></button>
+        </footer>
+      </div>
+    </aside>
+
+    <aside class="phone-call">
+      <button class="button" id="phone-call__close">
+        <img src="./assets/close.svg" alt="not_found">
+      </button>
+      <div class="feedback__body">
+        <h2>Заказать звонок</h2>
+        <input value="Телефон" class="feedback__form" type="text">
         </div>
         <footer class="feedback__footer">
           <p>Нажимая “отправить”, вы даете согласие 
@@ -108,10 +125,10 @@
         </div>
 
         <div class="unnessesary-buttons">
-          <button class="button">
+          <button class="button phone-call__button">
             <img src="./assets/call.svg" alt="not found" />
           </button>
-          <button class="button">
+          <button class="button feedback__button" id="">
             <img src="./assets/message.svg" alt="not found" />
           </button>
           <button class="button">
@@ -353,7 +370,7 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <p class="footer__first">© 2019 CPS <br>Разработано командой Apesong</p>
       <p class="footer__second">Политика конфиденциальности</p>
       <p class="footer__third">Информация, размещенная на данной странице, не является публичной офертой</p>
