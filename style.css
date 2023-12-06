@@ -16,6 +16,7 @@ body {
   transition: all 0.2s;
   height: 40px;
   width: 40px;
+  flex-shrink: 0;
   border-radius: 100%;
   background-color: #ff3e79;
   display: flex;
